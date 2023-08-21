@@ -28,6 +28,8 @@
 	background-color: gray;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
 #search-bar {
@@ -63,4 +65,24 @@
 #settings-btns {
 	grid-row: 2 / 3;
 }
+
+#projects {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+
+#announcements {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+#trending {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+
+
+
+
 
