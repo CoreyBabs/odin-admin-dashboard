@@ -1,6 +1,6 @@
 #content,
 #header,
-#sidebar,
+#side-btns,
 #container {
 	display: grid;
 }
@@ -50,4 +50,21 @@
 	grid-row: 2 / 3;
 }
 
+#side-btns {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 64px;
+}
+
+#app-btns {
+	grid-row: 1 / 2;
+}
+
+#settings-btns {
+	grid-row: 2 / 3;
+}
+
+.side-btn {
+	display: block;
+}
 
