@@ -81,6 +81,17 @@
 	grid-row: 2 / 3;
 }
 
+#cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.proj-btns {
+	display: grid;
+	justify-content: end;
+	grid-auto-flow: column;
+}
+
 
 
 
