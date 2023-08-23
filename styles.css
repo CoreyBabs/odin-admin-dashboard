@@ -7,7 +7,7 @@
 
 #container {
 	grid-template-columns: 1fr 4fr;
-	grid-template-rows: 1fr 4fr;
+	grid-template-rows: min(1fr, 150px) 4fr;
 }
 
 #header {
@@ -35,11 +35,25 @@
 #search-bar {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 10px;
 }
 
 #profile {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+#name-sm {
+	font-size: 18px;
+	font-weight: bold;
 }
 
 #banner {
@@ -86,14 +100,34 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 
+.head-btn {
+	background-color: #9333ea;
+	border-radius: 16px;
+	padding: 4px 16px;
+	border-style: none;
+	font-size: 14px;
+	margin: 16px;
+}
+
 .proj-btns {
 	display: grid;
 	justify-content: end;
 	grid-auto-flow: column;
 }
 
+.icon {
+	width: 25px;
+	height: 25px;
+}
 
+.pfp-small {
+	max-width: 50px;
+	border-radius: 50%;
+}
 
-
-
-
+input {
+	appearance: none;
+	border: none;
+	border-radius: 24px;
+	padding: 10px;
+}
