@@ -15,7 +15,7 @@ body {
 }
 
 #header {
-	background-color: #6b7280;
+	background-color: #FFFFFF;
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	grid-template-columns: 3fr 2fr;
@@ -29,7 +29,7 @@ body {
 }
 
 #content {
-	background-color: #27272a;
+	background-color: #FFFFFF;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 	grid-template-columns: 3fr 1fr;
@@ -121,13 +121,20 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 }
 
+#head-btns {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
 .head-btn {
 	background-color: #9333ea;
 	border-radius: 16px;
 	padding: 4px 16px;
 	border-style: none;
-	font-size: 14px;
-	margin: 16px;
+	font-size: 20px;
 }
 
 .proj-btns {
@@ -157,4 +164,5 @@ input {
 	border: none;
 	border-radius: 24px;
 	padding: 10px;
+	background-color: #6b7280;
 }
