@@ -1,3 +1,7 @@
+body {
+	font-family: 'Roboto'
+}
+
 #content,
 #header,
 #side-btns,
@@ -39,6 +43,7 @@
 	grid-template-columns: auto 1fr;
 	align-items: center;
 	gap: 10px;
+	margin-left: 50px;
 }
 
 #profile {
@@ -59,6 +64,22 @@
 #banner {
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
+	display: grid;
+	grid-template-columns: 125px auto;
+	align-items: center;
+	gap: 16px;
+}
+
+#intro {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+#name-lg {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 8px;
 }
 
 #head-btns {
@@ -123,6 +144,12 @@
 .pfp-small {
 	max-width: 50px;
 	border-radius: 50%;
+}
+
+#pfp-lg {
+	max-width: 75px;
+	border-radius: 50%;
+	margin-left: 50px;
 }
 
 input {
