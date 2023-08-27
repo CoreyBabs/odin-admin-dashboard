@@ -3,6 +3,11 @@ body {
 	margin: 0;
 }
 
+h2 {
+	margin: 0px;
+	margin-bottom: 8px;
+}
+
 #content,
 #header,
 #side-btns,
@@ -38,6 +43,7 @@ body {
 	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	padding: 35px 25px;
+	gap: 32px;
 }
 
 #search-bar {
@@ -111,16 +117,14 @@ body {
 	/* padding: 16px; */
 }
 
-#Announcements {
+#announcements {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-	padding: 32px;
 }
 
-#Trending {
+#trending {
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
-	padding: 24px;
 }
 
 #cards {
@@ -129,12 +133,20 @@ body {
 	gap: 25px;
 }
 
-#announcements,
-#trending,
+#announcements > div,
+#trending-profiles,
 .card {
 	background-color: white;
 	border-radius: 8px;
 	box-shadow: 5px 10px 10px -5px black;
+}
+
+#announcements > div {
+	padding: 24px;
+}
+
+#trending-profiles {
+	padding: 20px;
 }
 
 .card {
